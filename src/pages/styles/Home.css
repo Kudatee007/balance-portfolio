@@ -1,0 +1,188 @@
+.hero {
+  position: relative;
+  height: 570px;
+  padding: 20px;
+}
+.hero div {
+  position: absolute;
+  bottom: 24px;
+}
+.hero-picture {
+  width: 100%;
+  height: auto;
+}
+.hero-mobile-txt {
+  width: 100%;
+  text-align: center;
+  font-size: 13vw;
+  padding-top: 20px;
+  font-weight: 700;
+  color: var(--black);
+}
+.hero-desktop-txt {
+  display: none;
+  color: var(--black);
+}
+.hero-short-txt {
+  font-size: 4vw;
+  font-weight: 600;
+  padding-bottom: 3px;
+  color: var(--black);
+}
+.hero-long-txt {
+  font-size: 3.8vw;
+  width: 30ch;
+  font-weight: 500;
+  color: var(--gray);
+}
+.story-section {
+  padding: 100px 25px;
+}
+.story-image {
+  width: 135px;
+}
+.story-text {
+  font-size: 7vw;
+  font-weight: 700;
+}
+.story-card {
+  padding-bottom: 20px;
+}
+.story-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: var(--black);
+}
+.story-card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray);
+}
+.story-liner {
+  width: 100%;
+  background-color: var(--gray);
+  margin: 25px 0;
+}
+.story-content {
+  padding-bottom: 20px;
+}
+.all-more {
+  height: 200px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contact-section {
+  background-image: url("../../assets/contact.jpeg");
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20px;
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-title {
+  position: absolute;
+  bottom: 15px;
+  font-size: clamp(40px, 8vw, 60px);
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.contact-tag {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact-description {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media (min-width: 640px) {
+  .hero-mobile-txt {
+    display: none;
+  }
+  .hero-desktop-txt {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14vw;
+  }
+  .hero-short-txt {
+    font-size: 1vw;
+  }
+  .hero-long-txt {
+    font-size: 1vw;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 53%;
+  }
+  .hero div {
+    bottom: 0;
+    z-index: 100;
+  }
+  .story-cards-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .storyCard {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 80px;
+  }
+  .contact-title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .contact-section {
+    height: 40vh;
+  }
+  .contact-header {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .contact-description {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20ch;
+  }
+  .story-text {
+    font-size: 4vw;
+  }
+  .story-image {
+    width: 270px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+  }
+  .story-section {
+    padding: 150px 25px;
+  }
+}
+@media (min-width: 1020px) {
+  .story-section {
+    padding: 200px 35px;
+  }
+  .story-image {
+    width: 340px;
+  }
+  .contact-section {
+    height: 80vh;
+  }
+}
