@@ -1,3 +1,8 @@
+.main{
+  position: relative;
+  /* height: 200vh; */
+  /* height: 100vh; */
+}
 .hero {
   position: relative;
   height: 570px;
@@ -37,6 +42,7 @@
 }
 .story-section {
   padding: 100px 25px;
+  overflow-y: auto;
 }
 .story-image {
   width: 135px;
@@ -94,6 +100,11 @@
   color: white;
   font-weight: 600;
   text-decoration: underline;
+}
+section {
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 .contact-tag {
   color: white;

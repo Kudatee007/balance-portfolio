@@ -1,0 +1,128 @@
+.footer {
+  height: 100vh;
+  padding: 25px;
+  padding-top: 75px;
+  background-color: white;
+  position: relative;
+}
+.social-ions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.icon-circle {
+  background-color: var(--gray);
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contact {
+  margin-bottom: 0.5rem;
+}
+.footer-contact > p {
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.social-contact {
+  display: flex;
+  gap: 50px;
+}
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-buy {
+  background-color: var(--black);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-buy p {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-buy-highlight {
+  text-decoration: underline;
+}
+.footer-label {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.footer-contact span {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.footer-contact p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 500;
+  padding-top: 3px;
+}
+.footer-bottom-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+.footer-bottom-inner {
+  padding: 0 1.2rem;
+}
+.footer-legal {
+  display: flex;
+  gap: 15px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+}
+.top-icon {
+  width: 15px;
+  color: var(--gray);
+}
+.footer-divider {
+  width: 100%;
+  border-color: #f3f4f6;
+  margin-top: 10px;
+}
+.navlink-mobile {
+  display: block;
+}
+.navlink-desktop {
+  display: none;
+}
+@media (min-width: 640px) {
+  .navlink-mobile {
+    display: none;
+  }
+  .navlink-desktop {
+    display: block;
+  }
+  .footer-social-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+  }
+  .social-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .social-ions {
+    display: flex;
+    gap: 15px;
+  }
+}

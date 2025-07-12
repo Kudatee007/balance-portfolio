@@ -1,9 +1,10 @@
-import React from "react";
+import { useEffect } from "react";
 import "./styles/Home.css";
 import holdingFlowers from "../assets/holding-flowers.avif";
 import pictureBlack from "../assets/PictureBlack.svg";
 import MyButton from "../components/MyButton";
 import Project from "../components/Project";
+import Lenis from "lenis";
 
 const StoryCard = ({ tittle, txt }) => {
   return (
@@ -15,8 +16,19 @@ const StoryCard = ({ tittle, txt }) => {
 };
 
 const Home = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
-    <div>
+    <div className="main">
       {/* Hero-section */}
       <section className="hero-section">
         <div className="hero">
@@ -34,34 +46,41 @@ const Home = () => {
           <img src={holdingFlowers} alt="" className="hero-picture" />
         </div>
       </section>
-      <section className="story-section">
-        <div className="story-content">
-          <img src={pictureBlack} alt="" className="story-image" />
-          <p className="story-text">
-            I help brands craft meaningful stories and compelling visuals that
-            deeply resonate with their audience, foster strong connections,
-            build lasting loyalty, and drive sustainable long-term growth.
-          </p>
-        </div>
-        <div className="storyCard">
-          <hr className="story-liner" />
-          <div className="story-cards-wrapper">
-            <StoryCard
-              tittle="From A to Z"
-              txt="I manage your entire branding process, from concept to
+      <section>
+        <img src={holdingFlowers} alt="" className="hero-picture" />
+      </section>
+      <div>
+        <section className="story-section">
+          <div className="story-content">
+            <img src={pictureBlack} alt="" className="story-image" />
+            <p className="story-text">
+              I help brands craft meaningful stories and compelling visuals that
+              deeply resonate with their audience, foster strong connections,
+              build lasting loyalty, and drive sustainable long-term growth.
+            </p>
+          </div>
+          <section>
+            <div className="storyCard">
+              <hr className="story-liner" />
+              <div className="story-cards-wrapper">
+                <StoryCard
+                  tittle="From A to Z"
+                  txt="I manage your entire branding process, from concept to
                 execution. Whether it's logo design, messaging, or strategy, I
                 ensure everything aligns for a cohesive and impactful brand."
-            />
-            <StoryCard
-              tittle="Solo or Team"
-              txt="I work both independently and with a trusted team, adapting to
+                />
+                <StoryCard
+                  tittle="Solo or Team"
+                  txt="I work both independently and with a trusted team, adapting to
                 your project's needs to deliver the best results, whether it's a
                 solo vision or a collaborative effort."
-            />
-          </div>
-          <MyButton value="More about me" />
-        </div>
-      </section>
+                />
+              </div>
+              <MyButton value="More about me" />
+            </div>
+          </section>
+        </section>
+      </div>
       <Project backgroundClass="apex-bg" title="APEX ARCHITECTS" />
       <Project backgroundClass="dionysos-bg" title="DIONYSOS RESORTS" />
       <Project backgroundClass="eyewear-bg" title="ARGUS EYEWEAR" />

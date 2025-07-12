@@ -1,0 +1,10 @@
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+.nav-links li {
+  color: var(--black);
+  font-weight: 700;
+}
