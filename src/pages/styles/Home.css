@@ -1,4 +1,4 @@
-.main{
+.main {
   position: relative;
   /* height: 200vh; */
   /* height: 100vh; */
@@ -19,8 +19,8 @@
 .hero-mobile-txt {
   width: 100%;
   text-align: center;
-  font-size: 13vw;
-  padding-top: 20px;
+  font-size: 11vw;
+  padding-top: 50px;
   font-weight: 700;
   color: var(--black);
 }
@@ -116,7 +116,22 @@ section {
   font-size: 24px;
   font-weight: 600;
 }
+.hero-picture-mobile {
+  display: block;
+}
+.hero-picture-desktop {
+  display: none;
+}
+.navLinks {
+  display: none;
+}
 @media (min-width: 640px) {
+  .hero-picture-mobile {
+    display: none;
+  }
+  .hero-picture-desktop {
+    display: block;
+  }
   .hero-mobile-txt {
     display: none;
   }
@@ -124,7 +139,7 @@ section {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 14vw;
+    font-size: 12vw;
   }
   .hero-short-txt {
     font-size: 1vw;
@@ -184,6 +199,14 @@ section {
   }
   .story-section {
     padding: 150px 25px;
+  }
+  .navLinks {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    margin-left: 50px;
+    display: block;
   }
 }
 @media (min-width: 1020px) {

@@ -5,6 +5,7 @@ import pictureBlack from "../assets/PictureBlack.svg";
 import MyButton from "../components/MyButton";
 import Project from "../components/Project";
 import Lenis from "lenis";
+import NavLink from "../components/NavLinks";
 
 const StoryCard = ({ tittle, txt }) => {
   return (
@@ -32,21 +33,24 @@ const Home = () => {
       {/* Hero-section */}
       <section className="hero-section">
         <div className="hero">
-          <h1 className="hero-mobile-txt">JOHN TAYLOR</h1>
+          <div className="navLinks">
+            <NavLink fontSize="28px"/>
+          </div>
+          <h1 className="hero-mobile-txt">TIMMY KUDAISI</h1>
           <div>
             <p className="hero-short-txt">Digital Designer</p>
             <p className="hero-long-txt">
               I help designers and agencies elevate thier branding with creative
               development support.
             </p>
-            <h1 className="hero-desktop-txt">JOHN TAYLOR</h1>
+            <h1 className="hero-desktop-txt">TIMMY KUDAISI</h1>
           </div>
         </div>
-        <div>
+        <div className="hero-picture-desktop">
           <img src={holdingFlowers} alt="" className="hero-picture" />
         </div>
       </section>
-      <section>
+      <section className="hero-picture-mobile">
         <img src={holdingFlowers} alt="" className="hero-picture" />
       </section>
       <div>

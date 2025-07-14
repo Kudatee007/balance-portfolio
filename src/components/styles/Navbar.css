@@ -25,6 +25,9 @@
  top: 0;
   transform: translateX(0);
 }
+.logo-name {
+  font-size: 30px;
+}
 
 .sidebar-content {
   display: flex;
@@ -82,5 +85,8 @@
     align-items: center;
     flex-direction: row;
     gap: 200px;
+  }
+  .logo-name {
+    font-size: 50px;
   }
 }

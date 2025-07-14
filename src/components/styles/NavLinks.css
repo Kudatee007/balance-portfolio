@@ -1,7 +1,10 @@
 .nav-links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
   gap: 0;
+  z-index: 2000;
   list-style: none;
 }
 .nav-links li {

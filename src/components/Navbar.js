@@ -19,14 +19,14 @@ const Navbar = () => {
   return (
     <div className="navBar">
       <div className="header">
-        <Menu />
+        <h1 className="logo-name">TK</h1>
         <Menu onClick={handlenMenu} />
       </div>
       <div class={menu ? "sidebar" : "sidebar sidebar-NX"}>
         <aside>
           <section>
             <div class="sidebar-content">
-              <NavLinks fontSize="7vw"/>
+              <NavLinks fontSize="7vw" />
               <div class="sidebar-contact">
                 <div className="social-icons">
                   <div className="icon-circle">
